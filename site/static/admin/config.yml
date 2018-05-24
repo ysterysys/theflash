@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo:ysterysys/theflash
+  branch: master
+  
+ media_folder:"src/img/gallery"
+  
+ collections:
+    - name: food
+        labe:"Food Item"
+        folder:"site/content/food"
+        create:true
+        fields:
+        -{label:"name of item", name:"title",widget:"string"}
+        -{label:"Supported Meals",name"categories",widget:"list",default:{["lunch","dinner"]}
+        -{label:"Ingredients/Description",name:"description",widget:"text"}
+        -{label:"type of food",name:"type",widget:"string",default:"raw bar"}
+        -{label:"price", name:"price",widget:"string"}
