@@ -10,7 +10,7 @@ title = "Tasty Licks"
     url  = "/about"
     weight = 1
 
-	[[menu.main]]
+[[menu.main]]
     name = "Vid"
     url  = "/food"
     weight = 2
